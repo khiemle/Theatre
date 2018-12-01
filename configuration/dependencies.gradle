@@ -2,7 +2,7 @@ ext {
 
     compiler = [
             java  : JavaVersion.VERSION_1_8,
-            kotlin: '1.2.30'
+            kotlin: '1.3.10'
     ]
 
     android = [
@@ -58,7 +58,7 @@ ext {
 
     presentationDependencies = [
             "com.android.support:multidex:$multidexVersion",
-            "org.jetbrains.kotlin:kotlin-stdlib-jre8:$compiler.kotlin",
+            "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$compiler.kotlin",
             "com.google.dagger:dagger:${daggerVersion}",
             "com.google.dagger:dagger-android-support:${daggerVersion}",
             "android.arch.lifecycle:runtime:$lifecycleVersion",
@@ -91,7 +91,7 @@ ext {
     // Domain
 
     domainDependencies = [
-            "org.jetbrains.kotlin:kotlin-stdlib-jre8:$compiler.kotlin",
+            "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$compiler.kotlin",
             "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}"
     ]
 
@@ -107,7 +107,7 @@ ext {
     ]
 
     dataDependencies = [
-            "org.jetbrains.kotlin:kotlin-stdlib-jre8:$compiler.kotlin",
+            "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$compiler.kotlin",
             "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
             "com.squareup.retrofit2:retrofit:$retrofitVersion",
             "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
